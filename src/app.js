@@ -5,16 +5,17 @@ const http = require("http");
 const socketIo = require("socket.io");
 const db = require("./utils/db.js");
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const server = http.createServer(app)
 const io = socketIo(server)
 
-// app.use(express.static(path.join(__dirname, "/public")))
-// app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "../public")))
+app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.send("he")
+    res.render("home")
 })
 
 db()
