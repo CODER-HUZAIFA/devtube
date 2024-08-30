@@ -1,5 +1,5 @@
 {
     "watch": ["views", "./public/css/style.css"],
     "ext": "js,json,ejs,css",
-    "exec": "npm run build:css && node src/app.js"
+    "exec": "node src/app.js"
 }

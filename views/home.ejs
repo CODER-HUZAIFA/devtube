@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
-    <link rel="stylesheet" type="text/css" href="../css/output.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>DevTube -- Home Page</title>
 </head>
+
 <body>
-    <main class="w-32 h-14 bg-red-500"> Hello  </main>
+    <main class="main">
+        <section class="leftSection">
+            <div class="top">
+                <i class="ri-menu-line menu"></i>
+            </div>
+            <div class="bottom">
+                <div>
+                    <i class="ri-home-2-line"></i>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <i class="ri-film-line"></i>
+                    <p>Shorts</p>
+                </div>
+                <div>
+                    <i class="ri-pass-valid-line"></i>
+                    <p>Subscription</p>
+                </div>
+                <div>
+                    <i class="ri-presentation-fill"></i>
+                    <p>You</p>
+                </div>
+            </div>
+        </section>
+        <section class="rightSection">
+            <header>
+                <div class="nav">
+                    <div class="leftNav">
+                        <div class="logo">
+                            <img src="../devImage/Leonardo_Phoenix_A_modern_sleek_and_minimalist_logo_featuring_3-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                    <div class="middleNav">
+                        <div class="searchBar">
+                            <div class="bar">
+                                <input type="text" id="search" placeholder="Search">
+                            </div>
+                            <button class="barBtn">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                        <div class="mic">
+                            <i class="ri-mic-fill"></i>
+                        </div>
+                    </div>
+                    <div class="rightNav">
+                        <div class="buttons">
+                            <div class="create">
+                                <i class="ri-video-add-line"></i>
+                            </div>
+                            <div class="notification">
+                                <i class="ri-notification-2-line"></i>
+                            </div>
+                        </div>
+                        <div class="profilePic">
+                            <img src="../devImage/defaultProfilePic.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </main>
+
+    <script src="../js/index.js"></script>
 </body>
 </html>
